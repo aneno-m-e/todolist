@@ -1,11 +1,11 @@
 <template>
-  <div class="hello">
+  <div class="todolist">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Todos',
   props: {
   }
 }
