@@ -23,7 +23,8 @@ export default {
         //create a new todo object:
         const newTodoObj = {
             id: uuidv4(),
-            task: this.task //refers to data bound to input
+            task: this.task, //refers to data bound to input
+            completed: false
         }
         //emit event:
         this.$emit('add-todo', newTodoObj);
