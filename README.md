@@ -1,24 +1,13 @@
-# todolist
+# Todo list with VueJS
 
-## Project setup
-```
-npm install
-```
+Following this (article)[https://medium.com/@hugo.bjarred/learn-vuejs-by-building-a-simple-todo-app-44e2e7dfccae]
+Obstacles solved:
+- import Todo.vue component in Todos.vue
+- use the up-to-date uuid import from documentation + import uuid in main.js
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+With hints of (this video)[https://www.youtube.com/watch?v=EhrY9lB7rgU]
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Next steps
+Add CSS
+Filter todos
