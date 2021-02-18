@@ -3,20 +3,23 @@
     <h2>Cool things to do</h2>
     <ul>
       <li v-bind:key="todo.id" v-for='todo in todos'>
-        <span>
-          {{todo.id}} : {{todo.task}}
-        </span>
+        <Todo v-bind:todo="todo" />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import Todo from './Todo.vue'
+
 export default {
   name: 'Todos',
   props: [
     'todos'
-  ]
+  ],
+  components: {
+    Todo
+  }
 }
 </script>
 
