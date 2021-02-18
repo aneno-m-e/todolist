@@ -1,6 +1,7 @@
 <template>
   <div v-bind:class="{'completed': todo.completed}"> <!-- conditionnal class used only if completed = true -->
       <p v-on:click="markComplete">{{ todo.task }}</p>
+      <button @click="$emit('delete-todo', todo.id)">X</button>
   </div>
 </template>
 
