@@ -1,6 +1,6 @@
 <template>
-  <div class="todo">
-      <p>{{ todo.task }}</p>
+  <div v-bind:class="{'completed': todo.completed}"> <!-- conditionnal class used only if completed = true -->
+      <p v-on:click="markComplete">{{ todo.task }}</p>
   </div>
 </template>
 
@@ -9,11 +9,18 @@ export default {
   name: 'Todo',
   props: [
       'todo'
-  ]
+  ],
+  methods: {
+      markComplete(){
+          this.todo.completed = !this.todo.completed
+      }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+    .completed {
+        text-decoration: line-through;
+    }
 </style>
