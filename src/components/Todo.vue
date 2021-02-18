@@ -1,13 +1,15 @@
 <template>
   <div class="todo">
+      <p>{{ todo.task }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Todo',
-  props: {
-  }
+  props: [
+      'todo'
+  ]
 }
 </script>
 
